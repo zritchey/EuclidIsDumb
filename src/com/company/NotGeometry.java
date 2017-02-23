@@ -15,9 +15,17 @@ public class NotGeometry {
         }
         return recurseYouEuclid(b,r);
     }
-    public static int iterateEuclid(int a , int b){
-        int r=a%b
-        while
+    public static int iterateEuclid(int a , int b) {
+        int r = a % b;
+        int step = -1;
+        while (r != 0) {
+            step++;
+            if (step != 0) {
+                a = b;
+                b = r;
+            }
+            r = a % b;
+        }
+        return b;
     }
-
 }
