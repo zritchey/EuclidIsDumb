@@ -16,6 +16,11 @@ public class NotGeometry {
         return recurseYouEuclid(b,r);
     }
     public static int iterateEuclid(int a , int b) {
+        if(b>a){
+            int temp=a;
+            a=b;
+            b=temp;
+        }
         int r = a % b;
         int step = -1;
         while (r != 0) {

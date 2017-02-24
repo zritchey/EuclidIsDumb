@@ -3,7 +3,8 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(NotGeometry.recurseYouEuclid(45,18));
+        int []a={12345,4572};
+        System.out.println(NotGeometry.recurseYouEuclid(a[0],a[1])+"\n"+NotGeometry.iterateEuclid(a[0],a[1]));
     }
 
 }
